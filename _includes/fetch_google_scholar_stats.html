@@ -5,15 +5,62 @@
         {% else %}
         var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
         {% endif %}
+        var escapeHtml = function (value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+        var renderPublication = function (publication) {
+            var bib = publication.bib || {}
+            var title = escapeHtml(bib.title || 'Untitled')
+            var authors = escapeHtml(bib.author || '')
+            var venue = escapeHtml(bib.venue || bib.journal || bib.booktitle || '')
+            var year = escapeHtml(bib.pub_year || '')
+            var citations = publication.num_citations || 0
+            var titleHtml = publication.pub_url
+                ? "<a href='" + publication.pub_url + "'>" + title + "</a>"
+                : title
+            var meta = [authors, venue, year].filter(Boolean).join('. ')
+            var citationText = 'Citations: ' + citations
+            return "<li>" + titleHtml + (meta ? ". " + meta : "") + ". " + citationText + ".</li>"
+        }
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
             var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
+            var totalCitationEle = document.getElementById('total_cit')
+            if (totalCitationEle) {
+                totalCitationEle.innerHTML = totalCitation
+            }
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, element => {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                var publication = data['publications'] && data['publications'][paperId]
+                if (publication) {
+                    element.innerHTML = '| Citations: ' + publication['num_citations']
+                }
             });
+            var publicationEles = document.querySelectorAll('[data-google-scholar-publications]')
+            var publications = Object.keys(data['publications'] || {}).map(function (key) {
+                return data['publications'][key]
+            }).sort(function (left, right) {
+                var leftYear = parseInt(left.bib && left.bib.pub_year, 10) || 0
+                var rightYear = parseInt(right.bib && right.bib.pub_year, 10) || 0
+                if (leftYear !== rightYear) {
+                    return rightYear - leftYear
+                }
+                return (right.num_citations || 0) - (left.num_citations || 0)
+            })
+            Array.prototype.forEach.call(publicationEles, element => {
+                var limit = parseInt(element.getAttribute('data-limit'), 10)
+                var visiblePublications = Number.isFinite(limit) ? publications.slice(0, limit) : publications
+                if (!visiblePublications.length) {
+                    element.innerHTML = '<p>No publications available yet.</p>'
+                    return
+                }
+                element.innerHTML = "<ol>" + visiblePublications.map(renderPublication).join('') + "</ol>"
+            })
         });
     })
 </script>
