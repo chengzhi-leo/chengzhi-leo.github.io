@@ -5,6 +5,7 @@
   links:
     - { name: Paper, url: "https://arxiv.org/abs/2605.13542" }
     - { name: Project Page, url: "https://chengzhi-leo.github.io/RealICU-Bench/" }
+    - { name: Code, url: "https://github.com/chengzhi-leo/RealICU-Bench" }
 
 - title: "MedOpenClaw and MedFlowBench: Auditing Medical Agents in Full-Study Workflows"
   authors: "Weixiang Shen, **Chengzhi Shen**, Yanzhu Hu, Che Liu, Junde Wu, Jiayuan Zhu, Xiao Han, Zongyue Li, Jingpei Wu, Min Xu, Daguang Xu, Yueming Jin, Benedikt Wiestler, Daniel Rueckert, Jiazhen Pan"
