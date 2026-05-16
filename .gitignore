@@ -4,3 +4,5 @@ push.sh
 .bundle/
 .gem/
 vendor/bundle/
+assets/gs_data.json
+google_scholar_crawler/results/

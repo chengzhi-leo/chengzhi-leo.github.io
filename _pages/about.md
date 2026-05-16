@@ -8,56 +8,75 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
 <span class='anchor' id='about'></span>
 
 # About
 
-Chengzhi Shen is a PhD student at the Chair of AI in Healthcare and Medicine at the Technical University of Munich (TUM), supervised by [Prof. Dr. Daniel Rueckert](https://www.professoren.tum.de/rueckert-daniel), and works closely with [Dr. Jiazhen Pan](https://jiazhenpan.me/) and [Dr. Chen Chen](https://cherise215.github.io/). He obtained his master's degree in Biomedical Computing at TUM. Before joining as a PhD student, Chengzhi worked as a Machine Learning Engineer at Alibaba, Taobao Tmall Group, in Hangzhou, China. His research focuses on multimodal foundation models for medical applications, agentic systems, and trustworthy AI.
+I am Chengzhi Shen, a PhD student at the Chair of AI in Healthcare and Medicine at the Technical University of Munich (TUM), supervised by [Prof. Dr. Daniel Rueckert](https://www.professoren.tum.de/rueckert-daniel). I work closely with [Dr. Jiazhen Pan](https://jiazhenpan.me/) and [Dr. Chen (Cherise) Chen](https://cherise215.github.io/). My research focuses on trustworthy AI, multimodal large models, and agentic systems for medical applications.
 
+Before my PhD, I worked as a Machine Learning Algorithm Engineer at Alibaba Taobao Tmall Group in Hangzhou, where I focused on post-training omni-modal large models based on Qwen series models. I received my M.Sc. in Biomedical Computing from TUM in 2024.
+
+<div class="research-tags">
+  <span class="research-tag">Multimodal and Omni-modal Large Models</span>
+  <span class="research-tag">Agentic Systems</span>
+  <span class="research-tag">Trustworthy AI</span>
+  <span class="research-tag">AI for Healthcare</span>
+</div>
 
 # News
 
 <div class="news-section">
   <ul class="news-list">
+    <li><strong>2026.05</strong> Our work <a href="https://arxiv.org/abs/2605.13542">RealICU</a> is out! </li>
+    <li><strong>2026.03</strong> I was super excited to give a talk on "Research in Industry" during our lab retreat in Austria. </li>
     <li><strong>2026.01</strong> 🚀 Start my PhD at Prof. Dr. Daniel Rueckert's lab! </li>
-    <li><strong>2024.08</strong> Join Alibaba Taobao Tmall Group as a Machine Learning Engineer. </li>
-    <li><strong>2024.08</strong> Finished my master's degree in Biomedical Computing at TUM. </li>
+    <li><strong>2024.08</strong> Join Alibaba Group as a Machine Learning Algorithm Engineer. </li>
+    <li><strong>2024.08</strong> 🎉 Finish my master's degree in Biomedical Computing at TUM! </li>
   </ul>
 </div>
 
 
 <span class='anchor' id='research'></span>
 
-# Research Interests
-
-- Multimodal and omni-modal large models
-- Agentic systems
-- Trustworthy AI
-
 
 <span class='anchor' id='publications'></span>
 
 # Publications
-Recent publications are loaded automatically from Google Scholar. For the full publication list, please visit my [Google Scholar](https://scholar.google.com/citations?user=5bgtMIUAAAAJ).
+For the full publication list, please visit my [Google Scholar](https://scholar.google.com/citations?user=5bgtMIUAAAAJ).
 
-<div data-google-scholar-publications data-limit="20">
-  Loading publications...
+{% include publication_card.html %}
+
+
+
+# Background
+
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span class="timeline-date">2026 –</span>
+      <strong>Doctoral Candidate</strong><br>
+      Technical University of Munich, Germany
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span class="timeline-date">2024 – 26</span>
+      <strong>Machine Learning Engineer</strong><br>
+      Alibaba Group, China
+    </div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span class="timeline-date">2021 – 24</span>
+      <strong>M.Sc. Biomedical Computing</strong><br>
+      Technical University of Munich, Germany
+    </div>
+  </div>
 </div>
 
-
-
-# Education & Employments
-
-- Doctoral Candidate, AI in Healthcare and Medicine, Technical University of Munich, Germany
-- M.Sc. Biomedical Computing, Technical University of Munich, Germany
-- Machine Learning Engineer, Alibaba Taobao Tmall Group, China
 
 <span class='anchor' id='honors'></span>
 
@@ -70,9 +89,10 @@ Recent publications are loaded automatically from Google Scholar. For the full p
 <span class='anchor' id='talks'></span>
 
 # Talks
-- 2026.03 Research in Industry, Lab Retreat, Austria
+- 2026.03 Research in Industry - My experience at Alibaba, Lab Retreat, Austria
 
 <span class='anchor' id='services'></span>
 
 # Services
 - Reviewer at ICCV Workshop on Scene Graphs and Graph Representation Learning
+- UN Online Volunteer

@@ -1,0 +1,19 @@
+{% for pub in site.data.publications %}
+<div class="paper-box">
+  {% if pub.image %}
+  <div class="paper-box-image">
+    <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" onerror="this.parentElement.style.display='none'">
+  </div>
+  {% endif %}
+  <div class="paper-box-text">
+    <h3 class="paper-title">{{ pub.title }}</h3>
+    <p class="paper-authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% if pub.venue %}<span class="paper-venue-badge">{{ pub.venue }}</span>{% endif %}
+    {% if pub.links and pub.links.size > 0 %}
+    <p class="paper-links">
+      {% for link in pub.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>{% unless forloop.last %}<span class="paper-link-sep">&nbsp;&nbsp;</span>{% endunless %}{% endfor %}
+    </p>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}

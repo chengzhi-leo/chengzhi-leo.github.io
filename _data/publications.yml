@@ -1,0 +1,38 @@
+- title: "RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation"
+  authors: "**Chengzhi Shen**, Weixiang Shen, Tobias Susetzky, Chen (Cherise)Chen, Jun Li, Yuyuan Liu, Xuepeng Zhang, Zhenyu Gong, Daniel Rueckert, Jiazhen Pan"
+  venue: "arXiv 2026"
+  image: /images/papers/realicu.png
+  links:
+    - { name: Paper, url: "https://arxiv.org/abs/2605.13542" }
+    - { name: Project Page, url: "https://chengzhi-leo.github.io/RealICU-Bench/" }
+
+- title: "MedOpenClaw and MedFlowBench: Auditing Medical Agents in Full-Study Workflows"
+  authors: "Weixiang Shen, **Chengzhi Shen**, Yanzhu Hu, Che Liu, Junde Wu, Jiayuan Zhu, Xiao Han, Zongyue Li, Jingpei Wu, Min Xu, Daguang Xu, Yueming Jin, Benedikt Wiestler, Daniel Rueckert, Jiazhen Pan"
+  venue: "arXiv 2026"
+  image: /images/papers/medopenclaw.png
+  links:
+    - { name: Paper, url: "https://arxiv.org/pdf/2603.24649" }
+
+- title: "Self-Discovering Interpretable Diffusion Latent Directions for Responsible Text-to-Image Generation"
+  authors: "Hang Li, **Chengzhi Shen**, Philip Torr, Volker Tresp, Jindong Gu"
+  venue: "CVPR 2024"
+  image: /images/papers/self_discovering.png
+  links:
+    - { name: Paper, url: "https://arxiv.org/abs/2311.17216" }
+    - { name: Project Page, url: "https://interpretdiffusion.github.io/" }
+    - { name: Code, url: "https://github.com/hangligit/InterpretDiffusion" }
+
+- title: "Spatiotemporal Representation Learning for Short and Long Medical Image Time Series"
+  authors: "**Chengzhi Shen**, Martin J. Menten, Hrvoje Bogunović, Ursula Schmidt-Erfurth, Hendrik Scholl, Sobha Sivaprasad, Andrew Lotery, Daniel Rueckert, Paul Hager, Robbie Holland"
+  venue: "MICCAI 2024"
+  image: /images/papers/spatiotemporal.png
+  links:
+    - { name: Paper, url: "https://arxiv.org/abs/2403.07513" }
+    - { name: Code, url: "https://github.com/chengzhi-leo/tvrl" }
+
+- title: "SceneGenie: Scene Graph Guided Diffusion Models for Image Synthesis"
+  authors: "Azade Farshad, Yousef Yeganeh, Yu Chi, **Chengzhi Shen**, Björn Ommer, Nassir Navab"
+  venue: "ICCV Workshop 2023"
+  image: /images/papers/scenegenie.png
+  links:
+    - { name: Paper, url: "https://arxiv.org/abs/2304.14573" }

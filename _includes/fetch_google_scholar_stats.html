@@ -1,9 +1,13 @@
 <script>
     $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
+        {% if jekyll.environment == "production" %}
+          {% if site.google_scholar_stats_use_cdn %}
+        var gsDataUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json'
+          {% else %}
+        var gsDataUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json'
+          {% endif %}
         {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
+        var gsDataUrl = '{{ "/assets/gs_data.json" | relative_url }}'
         {% endif %}
         var escapeHtml = function (value) {
             return String(value)
@@ -27,7 +31,7 @@
             var citationText = 'Citations: ' + citations
             return "<li>" + titleHtml + (meta ? ". " + meta : "") + ". " + citationText + ".</li>"
         }
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+        $.getJSON(gsDataUrl, function (data) {
             var totalCitation = data['citedby']
             var totalCitationEle = document.getElementById('total_cit')
             if (totalCitationEle) {

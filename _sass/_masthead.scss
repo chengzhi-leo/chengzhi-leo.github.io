@@ -45,7 +45,7 @@
 
 .masthead__menu-home-item {
   @include breakpoint($medium) {
-    display: block !important;
+    display: table-cell !important;
   }
   display: none !important;
 }
@@ -54,10 +54,22 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-size: 16px;
 
   &--lg {
-    padding-right: 2em;
     font-weight: 700;
+    font-size: 20px;
+
+    @include breakpoint($large) {
+      width: 30%;
+    }
+  }
+
+  a {
+    background: linear-gradient(135deg, #1a6dff, #3380d0, #56c2e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
