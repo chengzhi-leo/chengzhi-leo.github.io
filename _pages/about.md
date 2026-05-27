@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: ""
-excerpt: ""
+title: "Chengzhi Shen - PhD Student, AI for Healthcare at TU Munich"
+description: "Chengzhi Shen is a PhD student at the Technical University of Munich (TUM), researching trustworthy AI, multimodal large models, and agentic systems for healthcare and medicine."
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,7 +10,9 @@ redirect_from:
 
 <span class='anchor' id='about'></span>
 
-# About
+# Chengzhi Shen
+
+## About
 
 I am Chengzhi Shen, a PhD student at the Chair of AI in Healthcare and Medicine at the Technical University of Munich (TUM), supervised by [Prof. Dr. Daniel Rueckert](https://www.professoren.tum.de/rueckert-daniel). I work closely with [Dr. Jiazhen Pan](https://jiazhenpan.me/) and [Dr. Chen (Cherise) Chen](https://cherise215.github.io/). My research focuses on trustworthy AI, multimodal large models, and agentic systems for medical applications.
 
@@ -23,7 +25,7 @@ Before my PhD, I worked as a Machine Learning Algorithm Engineer at Alibaba Taob
   <span class="research-tag">AI for Healthcare</span>
 </div>
 
-# News
+## News
 
 <div class="news-section">
   <ul class="news-list">
@@ -41,14 +43,14 @@ Before my PhD, I worked as a Machine Learning Algorithm Engineer at Alibaba Taob
 
 <span class='anchor' id='publications'></span>
 
-# Publications
+## Publications
 For the full publication list, please visit my [Google Scholar](https://scholar.google.com/citations?user=5bgtMIUAAAAJ).
 
 {% include publication_card.html %}
 
 
 
-# Background
+## Background
 
 <div class="timeline">
   <div class="timeline-item">
@@ -80,7 +82,7 @@ For the full publication list, please visit my [Google Scholar](https://scholar.
 
 <span class='anchor' id='honors'></span>
 
-# Honors
+## Honors
 - 2024 Deutschlandstipendium (Germany Scholarship)
 - 2023 Deutschlandstipendium (Germany Scholarship)
 - 2021 University Principal’s Award (top 1%) 大学成就奖
@@ -88,11 +90,11 @@ For the full publication list, please visit my [Google Scholar](https://scholar.
 
 <span class='anchor' id='talks'></span>
 
-# Talks
+## Talks
 - 2026.03 Research in Industry - My experience at Alibaba, Lab Retreat, Austria
 
 <span class='anchor' id='services'></span>
 
-# Services
+## Services
 - Reviewer at ICCV Workshop on Scene Graphs and Graph Representation Learning
 - UN Online Volunteer

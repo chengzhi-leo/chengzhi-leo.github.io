@@ -7,11 +7,22 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{{ site.title }} - Homepage</title>
+{% if page.title %}
+  <title>{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}</title>
+{% else %}
+  <title>{{ site.title }} - {{ site.description | truncate: 70, "" }}</title>
+{% endif %}
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+{% if seo_description %}
+  <meta name="description" content="{{ seo_description }}">
+{% endif %}
+{% if site.author.name %}
+  <meta name="author" content="{{ site.author.name }}">
 {% endif %}
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
@@ -30,14 +41,24 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
+{% assign seo_image = page.image | default: site.author.avatar %}
+{% if seo_image %}
+  {% unless seo_image contains "://" %}
+    {% assign seo_image = seo_image | prepend: "/" | prepend: site.url | replace: "//", "/" | replace: ":/", "://" %}
+  {% endunless %}
+  <meta property="og:image" content="{{ seo_image }}">
+  <meta name="twitter:image" content="{{ seo_image }}">
+  <meta name="twitter:card" content="summary">
+{% endif %}
+
+{% if seo_description %}
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
 
@@ -70,5 +91,42 @@
 {% endif %}
 {% if site.baidu_site_verification %}
   <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}" />
+{% endif %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.url }}/",
+  "image": "{{ site.url }}/{{ site.author.avatar }}",
+  "jobTitle": "PhD Student",
+  "email": "mailto:{{ site.author.email }}",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "{{ site.author.employer }}",
+    "department": "Chair of AI in Healthcare and Medicine",
+    "url": "https://www.tum.de/"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Technical University of Munich"
+  },
+  "knowsAbout": [
+    "Trustworthy AI",
+    "Multimodal Large Models",
+    "Agentic Systems",
+    "AI for Healthcare",
+    "Medical Image Analysis"
+  ],
+  "sameAs": [
+    "{{ site.author.googlescholar }}",
+    "{{ site.author.orcid }}",
+    "https://github.com/{{ site.author.github }}",
+    "https://www.linkedin.com/in/{{ site.author.linkedin }}"
+  ]
+}
+</script>
 {% endif %}
 <!-- end SEO -->
