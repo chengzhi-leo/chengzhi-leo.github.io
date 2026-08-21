@@ -10,8 +10,6 @@ redirect_from:
 
 <span class='anchor' id='about'></span>
 
-# Chengzhi Shen
-
 ## About
 
 I am Chengzhi Shen, a PhD student at the Chair of AI in Healthcare and Medicine at the Technical University of Munich (TUM), supervised by [Prof. Dr. Daniel Rueckert](https://www.professoren.tum.de/rueckert-daniel). I work closely with [Dr. Jiazhen Pan](https://jiazhenpan.me/) and [Dr. Chen (Cherise) Chen](https://cherise215.github.io/). My research focuses on trustworthy AI, multimodal large models, and agentic systems for medical applications.
