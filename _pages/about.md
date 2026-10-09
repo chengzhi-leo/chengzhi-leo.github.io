@@ -27,7 +27,7 @@ Before my PhD, I worked as a Machine Learning Algorithm Engineer at Alibaba Taob
 
 <div class="news-section">
   <ul class="news-list">
-    <li><strong>2026.05</strong> 🎉 Two papers accepted at NeurIPS 2026! Please check out our work: <a href="https://chengzhi-leo.github.io/RealICU-Bench/">RealICU</a> (poster), <a href="https://arxiv.org/abs/2603.24649">MedOpenClaw and MedFlowBench</a> (poster)  </li>
+    <li><strong>2026.05</strong> 🎉 Two papers accepted at NeurIPS 2026! Please check out our work: <a href="https://chengzhi-leo.github.io/RealICU-Bench/">RealICU</a> (poster), <a href="https://arxiv.org/abs/2603.24649">MedOpenClaw and MedFlowBench</a> (poster). See you in Sydney! </li>
     <li><strong>2026.05</strong> Our work <a href="https://chengzhi-leo.github.io/RealICU-Bench/">RealICU</a> is out! </li>
     <li><strong>2026.03</strong> I was super excited to give a talk on "Research in Industry" during our lab retreat in Austria. </li>
     <li><strong>2026.01</strong> 🚀 Start my PhD at Prof. Dr. Daniel Rueckert's lab! </li>
