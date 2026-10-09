@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Chengzhi Shen - PhD Student, AI for Healthcare at TU Munich"
-description: "Chengzhi Shen is a PhD student at the Technical University of Munich (TUM), researching trustworthy AI, multimodal large models, and agentic systems for healthcare and medicine."
+title: "Chengzhi Shen - PhD Student, AI for Healthcare, TU Munich"
+description: "Chengzhi Shen is a PhD student at the Technical University of Munich (TUM), researching multimodal large models, agentic systems, and trustworthy AI for healthcare and medicine."
 author_profile: true
 redirect_from: 
   - /about/
@@ -95,5 +95,8 @@ For the full publication list, please visit my [Google Scholar](https://scholar.
 <span class='anchor' id='services'></span>
 
 ## Services
-- Reviewer at ICCV Workshop on Scene Graphs and Graph Representation Learning
-- UN Online Volunteer
+- Reviewer at ARR 2026
+- Reviewer at ICCV 2023 Workshop on Scene Graphs and Graph Representation Learning
+- United Nations Online Volunteer
+- National Model United Nations (NMUN) New York, 2019
+- National Model United Nations (NMUN) China, 2018
