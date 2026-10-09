@@ -12,9 +12,9 @@ redirect_from:
 
 ## About
 
-I am Chengzhi Shen, a PhD student at the Chair of AI in Healthcare and Medicine at the Technical University of Munich (TUM), supervised by [Prof. Dr. Daniel Rueckert](https://www.professoren.tum.de/rueckert-daniel). I work closely with [Dr. Jiazhen Pan](https://jiazhenpan.me/) and [Dr. Chen (Cherise) Chen](https://cherise215.github.io/). My research focuses on trustworthy AI, multimodal large models, and agentic systems for medical applications.
+I am Chengzhi Shen, a PhD student at the Chair of [AI in Healthcare and Medicine](https://aim-lab.io/) at the Technical University of Munich (TUM), supervised by [Prof. Dr. Daniel Rueckert](https://www.professoren.tum.de/rueckert-daniel). I work closely with [Dr. Jiazhen Pan](https://jiazhenpan.me/) and [Dr. Chen (Cherise) Chen](https://cherise215.github.io/). My research focuses on trustworthy AI, multimodal large models, and agentic systems for medical applications.
 
-Before my PhD, I worked as a Machine Learning Algorithm Engineer at Alibaba Taobao Tmall Group in Hangzhou, where I focused on post-training omni-modal large models based on Qwen series models. I received my M.Sc. in Biomedical Computing from TUM in 2024.
+Before my PhD, I worked as a Machine Learning Algorithm Engineer at Alibaba Taobao Tmall Group in China, focusing on post-training omni-modal large models based on Qwen series models. I received my M.Sc. Biomedical Computing from TUM in 2024.
 
 <div class="research-tags">
   <span class="research-tag">Multimodal and Omni-modal Large Models</span>
@@ -27,7 +27,8 @@ Before my PhD, I worked as a Machine Learning Algorithm Engineer at Alibaba Taob
 
 <div class="news-section">
   <ul class="news-list">
-    <li><strong>2026.05</strong> Our work <a href="https://arxiv.org/abs/2605.13542">RealICU</a> is out! </li>
+    <li><strong>2026.05</strong> 🎉 Two papers accepted at NeurIPS 2026! Please check out our work: <a href="https://chengzhi-leo.github.io/RealICU-Bench/">RealICU</a> (poster), <a href="https://arxiv.org/abs/2603.24649">MedOpenClaw and MedFlowBench</a> (poster)  </li>
+    <li><strong>2026.05</strong> Our work <a href="https://chengzhi-leo.github.io/RealICU-Bench/">RealICU</a> is out! </li>
     <li><strong>2026.03</strong> I was super excited to give a talk on "Research in Industry" during our lab retreat in Austria. </li>
     <li><strong>2026.01</strong> 🚀 Start my PhD at Prof. Dr. Daniel Rueckert's lab! </li>
     <li><strong>2024.08</strong> Join Alibaba Group as a Machine Learning Algorithm Engineer. </li>

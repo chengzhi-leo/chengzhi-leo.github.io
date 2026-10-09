@@ -1,6 +1,6 @@
 - title: "RealICU: Do LLM Agents Understand Long-Context ICU Data? A Benchmark Beyond Behavior Imitation"
   authors: "**Chengzhi Shen**, Weixiang Shen, Tobias Susetzky, Chen (Cherise)Chen, Jun Li, Yuyuan Liu, Xuepeng Zhang, Zhenyu Gong, Daniel Rueckert, Jiazhen Pan"
-  venue: "arXiv 2026"
+  venue: "NeurIPS 2026"
   image: /images/papers/realicu.png
   links:
     - { name: Paper, url: "https://arxiv.org/abs/2605.13542" }
@@ -9,7 +9,7 @@
 
 - title: "MedOpenClaw and MedFlowBench: Auditing Medical Agents in Full-Study Workflows"
   authors: "Weixiang Shen, **Chengzhi Shen**, Yanzhu Hu, Che Liu, Junde Wu, Jiayuan Zhu, Xiao Han, Zongyue Li, Jingpei Wu, Min Xu, Daguang Xu, Yueming Jin, Benedikt Wiestler, Daniel Rueckert, Jiazhen Pan"
-  venue: "arXiv 2026"
+  venue: "NeurIPS 2026"
   image: /images/papers/medopenclaw.png
   links:
     - { name: Paper, url: "https://arxiv.org/pdf/2603.24649" }
